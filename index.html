@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <nav class="sidebar-nav">
+            <div class="nav-section">
+                <p class="nav-section-title">Дополнительно</p>
+                <button class="nav-btn active" data-section="about">Обо мне</button>
+                <button class="nav-btn" data-section="works">Мои работы</button>
+            </div>
+
+            <div class="nav-section">
+                <p class="nav-section-title">Сертификаты (Stepik)</p>
+                <button class="nav-btn sub-nav-btn" data-section="certs" data-toggle>Все сертификаты ▾</button>
+                <div class="submenu" id="certs-submenu">
+                    <button class="sub-btn active" data-cert="python">Python</button>
+                    <button class="sub-btn" data-cert="sql">SQL</button>
+                    <button class="sub-btn" data-cert="web">HTML / CSS / JS</button>
+		    <button class="sub-btn" data-cert="english">Английский язык</button>
+                    <button class="sub-btn" data-cert="other">Другое</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="sidebar-footer">
+            <a href="https://github.com/pieceandwork" target="_blank">GitHub</a>
+            <a href="mailto:yaroslavkozyrev2707@mail.ru">Email</a>
+        </div>
+    </aside>
+
+    <main class="content">
+
+        <header class="profile-header">
+            <img src="berserk.jpg" alt="Аватар" class="avatar">
+            <div class="profile-info">
+                <h1>Yaroslav</h1>
+                <p class="role">Python / Django Developer</p>
+            </div>
+        </header>
+
+        <section class="section active" id="section-about">
+            <h2>Обо мне</h2>
+            
+            <p class="about-lead">
+                Backend-разработчик с фокусом на Python и Django. Создаю масштабируемые веб-приложения, интернет-магазины и API.
+            </p>
+
+            <div class="about-grid">
+                <div class="about-item">
+                    <h3>Опыт</h3>
+                    <p>Разработка full-stack проектов: от проектирования базы данных до деплоя. Реализация кастомной бизнес-логики, интеграция платежных систем и email-рассылок на основе Django</p>
+                </div>
+                <div class="about-item">
+                    <h3>Ключевой проект</h3>
+                    <p><strong>ShopByKv</strong> - Включает ролевую модель (админ/модератор), корзину, фильтрацию, кэширование на Redis и оформление заказов с отправкой чеков.</p>
+                </div>
+            </div>
+
+            <h3 class="sub-heading">Технологический стек</h3>
+            <ul class="tags">
+                <li>Python</li>
+                <li>Django</li>
+                <li>Django ORM</li>
+                <li>SQLite / PostgreSQL</li>
+                <li>Redis</li>
+                <li>HTML / CSS</li>
+                <li>JavaScript</li>
+                <li>Git / GitHub</li>
+                <li>Linux</li>
+            </ul>
+        </section>
+
+        <section class="section" id="section-works">
+            <h2>Мои работы</h2>
+
+            <div class="work-card">
+                <h3>ShopByKv</h3>
+                <p>Онлайн-магазин комплектующих для ПК на Django. Каталог, корзина, оформление заказа с отправкой письма на email, роли пользователей, кэширование, поиск, фильтр по цене, пагинация.</p>
+                <p><strong>Стек:</strong> Python, Django, SQLite, Redis, Gmail SMTP, HTML/CSS/JS.</p>
+                <a href="https://github.com/pieceandwork/ShopByKv" target="_blank" class="btn">Смотреть на GitHub</a>
+            </div>
+
+            <div class="work-card">
+                <h3>Портфолио-сайт (этот сайт)</h3>
+                <p>SPA-портфолио с боковым меню, анимациями и подменой контента без перезагрузки. Чистый HTML/CSS/JS - без сборок.</p>
+                <p><strong>Стек:</strong> HTML, CSS, JavaScript.</p>
+                <a href="https://github.com/pieceandwork/pieceandwork.github.io" target="_blank" class="btn">Смотреть на GitHub</a>
+            </div>
+        </section>
+
+        <section class="section" id="section-certs">
+            <h2>Мои сертификаты</h2>
+
+            <div class="cert-list active" id="cert-python">
+                <h3>Python</h3>
+                <ul>
+                    <li><a href="https://stepik.org/course/67" target="_blank">Программирование на Python - Stepik</a></li>
+                    <li><a href="https://stepik.org/course/58852" target="_blank">Python: основы и применение - Stepik</a></li>
+                    <li><a href="https://stepik.org/course/575" target="_blank">Django для начинающих - Stepik</a></li>
+                </ul>
+            </div>
+
+            <div class="cert-list" id="cert-sql">
+                <h3>SQL</h3>
+                <ul>
+                    <li><a href="https://stepik.org/course/63054" target="_blank">Интерактивный тренажёр SQL - Stepik</a></li>
+                    <li><a href="https://stepik.org/course/5156" target="_blank">Основы SQL - Stepik</a></li>
+                    <li><a href="https://sql-ex.ru" target="_blank">SQL-EX: Практика SQL</a></li>
+                </ul>
+            </div>
+
+            <div class="cert-list" id="cert-web">
+                <h3>HTML / CSS / JS</h3>
+                <ul>
+                    <li><a href="https://htmlacademy.ru" target="_blank">HTML & CSS - HTML Academy</a></li>
+                    <li><a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/" target="_blank">JavaScript - freeCodeCamp</a></li>
+                    <li><a href="https://stepik.org/course/2223" target="_blank">Веб-разработка для начинающих - Stepik</a></li>
+                </ul>
+            </div>
+
+	    <div class="cert-list" id="cert-english">
+                <h3>Английский язык</h3>
+                <ul>
+                    <li><a href="https://stepik.org/course/1" target="_blank">Английский язык для начинающих - Stepik</a></li>
+                    <li><a href="https://stepik.org/course/2014" target="_blank">Английская грамматика - Stepik</a></li>
+                    <li><a href="https://stepik.org/course/578" target="_blank">Английский для IT-специалистов - Stepik</a></li>
+                </ul>
+	    </div>
+
+            <div class="cert-list" id="cert-other">
+                <h3>Другое</h3>
+                <ul>
+                    <li><a href="https://stepik.org/course/3145" target="_blank">Введение в Git - Stepik</a></li>
+                    <li><a href="https://stepik.org/course/73" target="_blank">Введение в Linux - Stepik</a></li>
+                </ul>
+            </div>
+	    
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
