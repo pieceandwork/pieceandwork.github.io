@@ -262,6 +262,18 @@ body {
     transform: translateX(5px);
 }
 
+.details {
+    font-size: 14px;
+    color: #a89b8a;
+    margin: 3px 0;
+}
+
+.details span {
+    color: #ffd700;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
 .cert-list { display: none; animation: fadeIn 0.4s ease; }
 .cert-list.active { display: block; }
 
