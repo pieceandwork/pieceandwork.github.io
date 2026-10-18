@@ -101,12 +101,13 @@ body {
 
 .profile-header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
     margin-bottom: 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(255, 215, 0, 0.15);
 }
+
 
 .profile-left {
     display: flex;
@@ -125,31 +126,34 @@ body {
     margin: 0;
 }
 
-.profile-info h1 { 
-    font-size: 26px; 
-    color: #ffd700; 
-    margin-bottom: 4px; 
+.profile-info h1 {
+    font-size: 26px;
+    color: #ffd700;
+    margin-bottom: 4px;
 }
 
-.role { 
-    font-size: 14px; 
-    color: #a89b8a; 
+.role {
+    font-size: 14px;
+    color: #a89b8a;
+    margin-bottom: 12px;
 }
 
 .avatar {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #b8860b;
-    transition: transform 0.3s;
     flex-shrink: 0;
 }
 
 .avatar:hover { transform: scale(1.1) rotate(-5deg); }
 
-.profile-info h1 { font-size: 26px; color: #ffd700; margin-bottom: 4px; }
-.role { font-size: 14px; color: #a89b8a; }
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .section {
     display: none;
@@ -265,7 +269,7 @@ body {
 .details {
     font-size: 14px;
     color: #a89b8a;
-    margin: 4px 0;
+    margin: 3px 0;
     line-height: 1.4;
 }
 
