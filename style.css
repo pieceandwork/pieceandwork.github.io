@@ -111,8 +111,10 @@ body {
 
 .profile-left {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
+    text-align: center;
+    gap: 10px;
 }
 
 .profile-right {
@@ -135,7 +137,7 @@ body {
 .role {
     font-size: 14px;
     color: #a89b8a;
-    margin-bottom: 12px;
+    margin: 0;
 }
 
 .avatar {
@@ -144,7 +146,6 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #b8860b;
-    flex-shrink: 0;
 }
 
 .avatar:hover { transform: scale(1.1) rotate(-5deg); }
@@ -153,6 +154,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.profile-left h1 {
+    font-size: 26px;
+    color: #ffd700;
+    margin: 0;
 }
 
 .section {
@@ -269,8 +276,7 @@ body {
 .details {
     font-size: 14px;
     color: #a89b8a;
-    margin: 3px 0;
-    line-height: 1.4;
+    margin: 0;
 }
 
 .details span {
@@ -317,12 +323,18 @@ body {
     .profile-header { flex-direction: column; text-align: center; }
     .about-grid { grid-template-columns: 1fr; }
 
-    .profile-header { 
-        flex-direction: column; 
-        align-items: flex-start; 
-        gap: 15px; 
+    .profile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 215, 0, 0.15);
     }
-    .profile-right { 
-        text-align: left; 
+    .profile-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
     }
 }
