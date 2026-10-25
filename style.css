@@ -230,6 +230,22 @@ body {
     margin: 0;
 }
 
+.stepik-link {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 8px;
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 14px;
+    border-bottom: 1px dashed #ffd700;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.stepik-link:hover {
+    color: #ffeb80;
+    border-bottom-color: transparent;
+}
+
 .tags { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
 
 .tags li {
