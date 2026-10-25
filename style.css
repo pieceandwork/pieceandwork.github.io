@@ -7,6 +7,21 @@ body {
     min-height: 100vh;
 }
 
+.stepik-link {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #ffd700;
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(255, 215, 0, 0.5);
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.stepik-link:hover {
+    color: #ffeb80;
+    border-bottom-color: transparent;
+}
+
 .layout { display: flex; min-height: 100vh; max-width: 1200px; margin: 0 auto; }
 
 .sidebar {
@@ -228,21 +243,6 @@ body {
     font-size: 14px;
     color: #c0b0a0;
     margin: 0;
-}
-
-.stepik-link {
-    display: inline-block;
-    margin-top: 5px;
-    font-size: 14px;
-    color: #ffd700;
-    text-decoration: none;
-    border-bottom: 1px dashed rgba(255, 215, 0, 0.5);
-    transition: color 0.2s, border-color 0.2s;
-}
-
-.stepik-link:hover {
-    color: #ffeb80;
-    border-bottom-color: transparent;
 }
 
 .tags { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
