@@ -231,19 +231,19 @@ body {
 }
 
 .stepik-link {
-    display: inline-block;
-    margin-top: 15px;
-    margin-left: 8px;
-    color: #ffd700;
+    display: block;
+    margin-top: 25px;
+    padding: 8px 8px;
+    color: #d0c0b0;
     text-decoration: none;
-    font-size: 14px;
-    border-bottom: 1px dashed #ffd700;
-    transition: color 0.2s, border-color 0.2s;
+    font-size: 15px;
+    border-radius: 4px;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .stepik-link:hover {
-    color: #ffeb80;
-    border-bottom-color: transparent;
+    color: #ffd700;
+    transform: translateX(5px);
 }
 
 .tags { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
