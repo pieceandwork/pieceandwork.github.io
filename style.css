@@ -166,14 +166,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    text-align: right;
-    gap: 8px;
+    gap: 10px;
 }
+
 
 .details {
     font-size: 14px;
     color: #a89b8a;
     margin: 0;
+    text-align: right;
 }
 
 .details span {
